@@ -1,0 +1,113 @@
+/* スクロールバー */
+
+::-webkit-scrollbar {
+  width: 20px;
+  background: #29c2ff;
+  margin: 0 2px 0 0;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 100px;
+  background: #ff931c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #29c2ff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #78cd68;
+}
+
+/* 文字反転 */
+
+::selection {
+  background: #ff931c;
+  color: #29c2ff;
+}
+
+::-moz-selection {
+  background: #ff931c;
+  color: #29c2ff;
+}
+
+/* カーソル */
+
+html {
+  overflow-y: scroll;
+  cursor: url("../images/cursor.png"), auto !important;
+  cursor: -webkit-image-set(url("../images/cursor.png") 1x, url("../images/cursor_2x.png") 2x), auto !important;
+}
+
+a {
+  cursor: url("../images/cursor_on.png"), auto !important;
+  cursor: -webkit-image-set(url("../images/cursor_on.png") 1x, url("../images/cursor_on_2x.png") 2x), auto !important;
+}
+
+/* 共通 */
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #29c2ff;
+  padding: 50px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px;
+  color: #ff931c;
+  line-height: 1.4;
+  font-size: 4vw;
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img {
+  width: 80vw;
+}
+
+/* 画像 */
+
+.pc {
+  display: block !important;
+}
+.sp {
+  display: none !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+}
+
+/* フッター */
+
+footer {
+  position: fixed;
+  bottom: 5%;
+  padding: 5px 10px;
+}
+
+input {
+  width: 180px;
+}
+button {
+  cursor: url("../images/cursor_on.png"), auto !important;
+  cursor: -webkit-image-set(url("../images/cursor_on.png") 1x, url("../images/cursor_on_2x.png") 2x), auto !important;
+}
