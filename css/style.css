@@ -61,6 +61,8 @@ body {
   box-sizing: border-box;
 }
 
+/* 文字 */
+
 h1 {
   margin: 0;
   padding: 10px;
@@ -69,6 +71,22 @@ h1 {
   font-size: 4vw;
   font-family: sans-serif;
 }
+
+.cssanimation {
+  animation: flowing-anim 3s forwards linear;
+}
+
+@keyframes flowing-anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* 画像 */
+
 .container {
   display: flex;
   justify-content: center;
@@ -77,9 +95,6 @@ h1 {
 .container img {
   width: 80vw;
 }
-
-/* 画像 */
-
 .pc {
   display: block !important;
 }
